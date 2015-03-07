@@ -2,7 +2,7 @@
 Code to generate a property list of projects/branches for Jenkins from Gitlab. 
 
 ### Purpose
-This code will generate a .properties file which can be read by the Extended Choice Parameter Script plugin in Jenkins.  I use this to allow our QA person to easily deploy git features branches to our QA server.
+This code will generate a .properties file which can be read by the Extended Choice Parameter Script plugin in Jenkins.  I use this to allow our QA person to easily deploy Git features branches to our QA server.
 
 ### Requirements
 * [Gitlab](https://about.gitlab.com/features/#community) VCS server
@@ -35,7 +35,7 @@ Open this URL in your browser.  http://127.0.0.1:commandboxport
 ### Usage
 Setup a scheduled task to run this code and generate a new .properties file as needed. I run this once a day. We don't create feature branches that often and I find this is an acceptable schedule. YMMV.
 
-See my [blog about details on how to setup Jenkins using the Extended Choice Parameter Script]().
+See my [blog about details on how to setup Jenkins using the Extended Choice Parameter Script](http://thecrumb.com/2015/03/06/gitlab-jenkins-property-generator/).
 
 ### Notes
 This code is really overly complicated for what it does. This was just an excuse for me to try out writing something quick in ColdBox hence my use of views, etc., which in this case are really unnecessary.  If I have time I would actually like to re-write this to use CommandBox.
